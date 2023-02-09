@@ -1,0 +1,51 @@
+.content {
+  @apply text-a-gray-70 text-base font-semibold;
+}
+
+.content strong {
+  @apply text-a-blue-70 text-2xl font-semibold;
+}
+
+.stories > div:first-child {
+  @apply max-w-md overflow-hidden;
+}
+
+.stories > div:first-child > div {
+  @apply first:top-14 first:!w-full first:!px-4 first:!py-2 last:!fixed last:z-10 last:mt-14 last:mb-20 last:!h-[calc(100%_-_8.5rem)];
+}
+
+.mobileStories > div:first-child > div {
+  @apply first:!top-0;
+}
+
+.endStories > div:first-child > div {
+  @apply last:!hidden;
+}
+
+.endStories > div:first-child > div:first-child > div:last-child > div {
+  @apply !transform-none;
+}
+
+.sharing > div:first-child > div {
+  @apply first:!hidden;
+}
+
+.sharing > div:first-child > div button {
+  @apply !hidden;
+}
+
+.sharing > div:first-child > div header + div {
+  @apply !pt-6;
+}
+
+.storySummary {
+  @apply z-50 mb-20 w-full max-w-[75%] px-[5%];
+}
+
+.storySummary dt {
+  @apply text-a-gray-70 text-base font-semibold;
+}
+
+.storySummary dd {
+  @apply text-a-red-70 mb-4 text-xl font-semibold;
+}
